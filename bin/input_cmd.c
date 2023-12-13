@@ -6,7 +6,7 @@
  * As well as removes new line
  */
 
-void read_mycommand(charr *command, size_t size) {
+void read_mycommand(char *command, size_t size) {
 	if (fgets(command, size, stdin) == NULL){
 		if(feof(stdin)){
 			write ("\n");

@@ -7,14 +7,15 @@
  * Run the program to enter the shell. Type commands to execute.
  */
 
-int main(void){
-	char command[115];
+int main(void)
+{
+	char my_command[115];
 
-	do {
+	do{
 		looping_display_prompt();
 		read_mycommand(command, sizeof(command));
 		execute_command(command);
-	} while (1);
+	}while (1);
  
 	return (0);
 }

@@ -1,4 +1,4 @@
-#include "SHELL_H"
+#ifndef SHELL_H
 #define SHELL_H
 
 #include <stdio.h>
@@ -22,7 +22,6 @@
 void looping_display_prompt(void);
 void myprint(const char *message);
 void read_mycommand(char *command, size_t size);
-void execute_command(const char *command);
 void execute_command(char *args[]);
 void print_environment();
 void print_error(char *message);
