@@ -7,7 +7,7 @@
   *
   * Return: Number of words in string, -1 on failure
   */
-int word_count(char *str, char *delim)
+int w_count(char *str, char *delim)
 {
 	int count;
 	char *dup;
