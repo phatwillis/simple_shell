@@ -42,7 +42,7 @@ char **split_string(const char *cmd);
 void execute_cmd(const char *cmd, char *const envp[]);
 void free_new_av(char **new_av);
 char *_getenv(const char *str);
-char *handle_path(const char *cmd);
+char *handel_path(const char *cmd);
 int print_error(char *str);
 void _perror(const char *cmd, char *error_message);
 void _exit_builtin(char *cmd, char *status);
@@ -53,10 +53,10 @@ int handle_env(void);
 void free_env(Node_env *head);
 char *_strtok(char *str, const char *delim);
 int _atoi(char *str);
-int word_count(char *av, char ***args);
+int w_count(char *av, char ***args);
 void free_environ(char **env);
 int _change_dir(char *cmd);
-int w_count(char *str, char *delim);
+int word_count(char *str, char *delim);
 char *_handle_comment(char *cmd);
 
 /* The String Function Prototype*/
