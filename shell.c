@@ -16,7 +16,7 @@ void prompt(void)
 	}
 }
 
-int updated = 0;
+int _updated = 0;
 
 /**
  * main - the entry point of the simple shell
@@ -47,8 +47,8 @@ int main(int ac __attribute__((unused)), char **av __attribute__((unused)))
 			(size_t)_strlen(cmd))
 			continue;
 		/* check for comments, handle_comment modifies cmd */
- 		if (handle_comment(cmd) == NULL)
- 		{
+		if (_handle_comment(cmd) == NULL)
+		{
 			free(cmd);
 			cmd = NULL;
 			continue;
@@ -64,14 +64,14 @@ int main(int ac __attribute__((unused)), char **av __attribute__((unused)))
 		{
 			free(cmd);
 			cmd = NULL;
-			exit_builtin(cmd, NULL);
+			_exit_builtin(cmd, NULL);
 			continue;
 		}
 		/* Handle cd command */
 		dup = _strdup(cmd);
 		if (_strcmp(strtok(dup, " \t\r\n"), "cd") == 0)
 		{
-			change_dir(cmd);
+			_change_dir(cmd);
 			free(cmd);
 			free(dup);
 			dup = cmd = NULL;
@@ -86,7 +86,7 @@ int main(int ac __attribute__((unused)), char **av __attribute__((unused)))
 			status_copy = (status != NULL) ? _strdup(status) : NULL;
 			free(cmd);
 			cmd = NULL;
-			exit_builtin(status_copy, status_copy);
+			_exit_builtin(status_copy, status_copy);
 			free(status_copy);
 			status_copy = NULL;
 			continue;
@@ -115,7 +115,7 @@ void handle_signal(int sig)
 			free(cmd);
 			cmd = NULL;
 		}
-		if (updated == 1)
+		if (_updated == 1)
 		{
 			free_environ(environ);
 		}

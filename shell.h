@@ -53,10 +53,10 @@ int handle_env(void);
 void free_env(Node_env *head);
 char *_strtok(char *str, const char *delim);
 int _atoi(char *str);
-int w_count(char *av, char ***args);
+int wcount(char *av, char ***args);
 void free_environ(char **env);
 int _change_dir(char *cmd);
-int word_count(char *str, char *delim);
+int w_count(char *str, char *delim);
 char *_handle_comment(char *cmd);
 
 /* The String Function Prototype*/

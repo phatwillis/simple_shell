@@ -6,7 +6,7 @@
  * @args: the token
  * Return: the count
  */
-int w_count(char *av, char ***args)
+int wcount(char *av, char ***args)
 {
 	int count = 0, i;
 	char *token;

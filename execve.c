@@ -15,7 +15,7 @@ int count_Args(const char *cmd)
 	if (copy_cmd == NULL)
 	{
 		perror("Error duplicating command string");
-		exit(EXIT_FAILUR);
+		exit(EXIT_FAILURE);
 	}
 	token = strtok(copy_cmd, delimiters);
 	while (token)
@@ -101,7 +101,7 @@ void execute_cmd(const char *cmd, char *const envp[])
 	}
 	if (pid == 0)
 	{
-		path_cmd = handle_path(new_av[0]);
+		path_cmd = handel_path(new_av[0]);
 		if (path_cmd == NULL)
 		{
 			_perror(cmd, "not found");
