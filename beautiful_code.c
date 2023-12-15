@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * main - Simple arithemetic c program
+ * simple_arithemetic - Simple arithemetic c program
  *
  * Description: print basic arithemetic code
  * of two declared intergers
@@ -9,7 +9,7 @@
  * Return: 0 on Success
  */
 
-int main(void)
+void simple_arithemetic(void)
 {
 
 	int a = 4;
