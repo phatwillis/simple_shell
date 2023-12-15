@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * exit_builtin - the  function that handles the exit built-in
+ * _exit_builtin - the  function that handles the exit built-in
  * @cmd: is the entered command
  * @status: the status passed wirh the exit
  */
