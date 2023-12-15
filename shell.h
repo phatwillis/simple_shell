@@ -57,7 +57,7 @@ int word_count(char *av, char ***args);
 void free_environ(char **env);
 int _change_dir(char *cmd);
 int w_count(char *str, char *delim);
-char *handle_comment(char *cmd);
+char *_handle_comment(char *cmd);
 
 /* The String Function Prototype*/
 
