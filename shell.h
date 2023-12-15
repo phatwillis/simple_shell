@@ -35,7 +35,7 @@ typedef struct Node_env
 
 /* Functions Protoype */
 
-void simple_arithemetic(void)
+void simple_arithemetic(void);
 void handle_signal(int sig);
 void prompt(void);
 int count_Args(const char *cmd);
