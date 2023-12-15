@@ -21,3 +21,8 @@ The Simple Shell project is a basic implementation of a command-line shell in C.
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/simple_shell.git
+
+## Contributors Names:
+
+1. Steven Miene (email: smiene13@gmail.com)
+2. Williams Michael (email: willmich067@gmail.com)
