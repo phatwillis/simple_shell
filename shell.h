@@ -45,7 +45,7 @@ char *_getenv(const char *str);
 char *handle_path(const char *cmd);
 int print_error(char *str);
 void _perror(const char *cmd, char *error_message);
-void exit_builtin(char *cmd, char *status);
+void _exit_builtin(char *cmd, char *status);
 Node_env *create_node(char *data, int number);
 void add_to_list(Node_env **head, Node_env *new_node);
 void print_env(Node_env *head);
